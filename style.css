@@ -1,27 +1,25 @@
 /* ************ */
 /* common */
 /* ************ */
-
 * {
     box-sizing: border-box;
 }
-
 body {
     margin: 0;
 }
-
 main {
-    padding: 50px 0;
+    padding: 50px 0 20px 0;
+    min-height: calc(100vh - 104px);
 }
-
 a {
     text-decoration: none;
 }
-
 a:hover, button:hover {
     opacity: .8;
 }
-
+img {
+    max-width: 100%;
+}
 .wrapper {
     /* background-color: yellow; */
     max-width: 800px;
@@ -32,28 +30,23 @@ a:hover, button:hover {
 /* ************ */
 /* header */
 /* ************ */
-
 header {
     background-color: lightgray;
     padding: 14px 0;
 }
-
 header .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 header .logo {
     color: grey;
     font-size: 24px;
 }
-
 header nav a {
     color: grey;
     margin-right: 20px;
 }
-
 header nav a:last-child {
     margin-right: 0;
 }
@@ -61,11 +54,9 @@ header nav a:last-child {
 /* ************ */
 /* filters */
 /* ************ */
-
 .filters {
     text-align: center;
 }
-
 .filters button {
     margin-right: 15px;
     border: none;
@@ -73,26 +64,71 @@ header nav a:last-child {
     background-color: lightgray;
     cursor: pointer;
 }
-
 .filters button:last-child {
     margin-right: 0;
 }
-
 .filters button.active {
     background-color: rgb(51, 51, 51);
     color: white;
 }
 
 /* ************ */
+/* projects */
+/* ************ */
+.projects {
+    margin-top: 40px;
+}
+.projects .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.projects .project {
+    width: calc(33.33% - 20px);
+    margin-bottom: 30px;
+    border: 1px solid grey;
+}
+.projects .project .thumbnail {
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.projects .project .thumbnail.form {
+    background-image: url('form/thumbnail.png');
+}
+.projects .project .thumbnail.connect {
+    background-image: url('connect/thumbnail.png');
+}
+/* .projects .project .thumbnail img {
+    display: block;
+} */
+.projects .project .info {
+    display: flex;
+    border-top: 1px solid grey;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+.projects .project .info p {
+    margin: 0;
+}
+.projects .project .icons .github {
+    margin-right: 10px;
+}
+.projects .project .icons img {
+    width: 16px;
+}
+
+
+/* ************ */
 /* footer */
 /* ************ */
-
 footer {
     background-color: lightgrey;
     text-align: center; 
     padding: 14px 0;
 }
-
 footer p {
     margin: 0;
 }
