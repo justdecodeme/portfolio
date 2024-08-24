@@ -47,6 +47,10 @@ header nav a {
     color: grey;
     margin-right: 20px;
 }
+header nav a.active {
+    color: rgb(59, 59, 59);
+    font-weight: bold;
+}
 header nav a:last-child {
     margin-right: 0;
 }
@@ -54,7 +58,7 @@ header nav a:last-child {
 /* ************ */
 /* filters */
 /* ************ */
-.filters {
+/* .filters {
     text-align: center;
 }
 .filters button {
@@ -70,27 +74,28 @@ header nav a:last-child {
 .filters button.active {
     background-color: rgb(51, 51, 51);
     color: white;
-}
+} */
 
 /* ************ */
 /* projects */
 /* ************ */
 .projects {
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 .projects .wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 .projects .project {
     width: calc(33.33% - 20px);
     margin-bottom: 30px;
     border: 1px solid grey;
+    margin: 10px;
 }
 .projects .project .thumbnail {
     height: 150px;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -100,9 +105,6 @@ header nav a:last-child {
 .projects .project .thumbnail.connect {
     background-image: url('connect/thumbnail.png');
 }
-/* .projects .project .thumbnail img {
-    display: block;
-} */
 .projects .project .info {
     display: flex;
     border-top: 1px solid grey;
