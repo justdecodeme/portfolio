@@ -105,6 +105,9 @@ header nav a:last-child {
 .projects .project .thumbnail.connect {
     background-image: url('connect/thumbnail.png');
 }
+.projects .project .thumbnail.football_game {
+    background-image: url('football-game/thumbnail.png');
+}
 .projects .project .info {
     display: flex;
     border-top: 1px solid grey;
